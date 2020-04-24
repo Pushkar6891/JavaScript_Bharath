@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Else Ladder Conditional Statement</title>
+    <script>
+      var javascriptmarks = parseInt(prompt("enter js marks :"));
+      var javamarks = parseInt(prompt("enter java marks :"));
+      var dotnetmarks = parseInt(prompt("enter dot net marks :"));
+
+      var total = javascriptmarks + javamarks + dotnetmarks;
+      document.writeln("Total: " + total);
+
+      var average = total / 3;
+      document.writeln("Average: " + average);
+
+      if (javascriptmarks >= 35 && javamarks >= 35 && dotnetmarks >= 35) {
+        document.writeln("Passed:");
+        if (average >= 35 && average < 60) {
+          document.writeln("C");
+        } else if (average >= 60 && average < 70) {
+          document.writeln("B");
+        } else {
+          document.writeln("A");
+        }
+      } else {
+        document.writeln("Failed");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
